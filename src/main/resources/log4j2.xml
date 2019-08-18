@@ -1,0 +1,13 @@
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss} %-5level %x [%t] %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" level="trace" />
+        </Root>
+        <Logger name="org.eclipse" level="info" />
+    </Loggers>
+</Configuration>
