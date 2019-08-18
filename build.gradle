@@ -12,6 +12,10 @@ application {
     mainClassName = 'net.keathmilligan.sshdtest.Main'
 }
 
+run {
+    standardInput = System.in
+}
+
 repositories {
     mavenCentral()
 }
